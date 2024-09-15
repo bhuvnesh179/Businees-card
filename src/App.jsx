@@ -9,8 +9,33 @@ function App() {
       <p>Ionic</p>
       <p>Open Source</p>
       <p>App Dev</p>
-      <button> LinkdedIn</button>
-      <button> Twitter</button>
+      
+      <button style={{ 
+        backgroundColor: "#04AA6D",
+        border: "none",
+        color: "white",
+        padding: "20px",
+        textAlign: "center",
+        textDecoration: "none",
+        display: "inline-block",
+        fontSize: "16px",
+        margin: "4px 4px",
+        borderRadius: "8px",
+          }}> LinkdedIn</button>
+      <button style={{ 
+          backgroundColor: "#04AA6D",
+          border: "none",
+          color: "white",
+          padding: "20px",
+          textAlign: "center",
+          textDecoration: "none",
+          display: "inline-block",
+          fontSize: "16px",
+          margin: "4px 4px",
+          borderRadius: "8px",  
+          }}> Twitter</button>
+      
+      
       </CardComponent>
     </>
   )
@@ -18,10 +43,13 @@ function App() {
 
 function CardComponent({children}){
   return <div style={{
-    border: "2px solid black", 
-    height:"300px",
-    width:"300px",
-    padding: "10px"
+    // border: "2px solid black", 
+    height:"40%",
+    width:"40%",
+    padding: "10px",
+    borderRadius: "8px",
+    boxShadow: "1px 1px 10px 1px grey"
+
     }}>
     {children}
   </div>
