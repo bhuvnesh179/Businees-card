@@ -1,19 +1,19 @@
-export function BusinessCard(props){
+export function BusinessCard({card}){
     
     return (
         <div style={style.card}>
-            <h2 style={style.name}>{props.innerComponent.name}</h2>
-            <p style={style.description}>{props.innerComponent.description}</p>
+            <h2 style={style.name}>{card.name}</h2>
+            <p style={style.description}>{card.description}</p>
             <h3 style={style.interestsHeader}>Interest</h3>
             <ul style={style.interestsList}>
-                {props.innerComponent.interestList.map((interest) => (
+                {card.interestList.map((interest) => (
                     <li key={interest} style={style.interestItem}>{interest}</li>
                 ))}
             </ul>
 
             <div style={style.socialLinks}>
-                <a href={props.innerComponent.Linkedin} target="_blank" style={{ ...style.link, marginLeft: '0px' }}>Linkedin</a>
-                <a href={props.innerComponent.Twitter} target="_blank" style={{ ...style.link, marginLeft: '0px' }}>Twitter</a>
+                <a href={card.Linkedin} target="_blank" style={{ ...style.link, marginLeft: '0px' }}>Linkedin</a>
+                <a href={card.Twitter} target="_blank" style={{ ...style.link, marginLeft: '0px' }}>Twitter</a>
 
             </div>
         </div>
